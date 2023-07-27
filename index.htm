@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>bmi_calculator</title>
+</head>
+<body>
+    <form name="bmiForm">
+        <div class="bmi_calculator">
+            <h1>Calculate your BMI</h1>
+            <div class="bmi-claulator-weight">
+                <input type="range" class="weight_slider" 
+                name="realweight" id="myWeight" min="25" 
+                max="100" value="60" >
+            <p>WEIGHT : 
+                <input type="number" name="basic" 
+                id="inputWeight" min="25" max="100" 
+                value="60" oninput="ShowValWeight(this.value)">
+                <span id="weight"></span>kg
+            </p>
+            </div>
+
+            <div class="bmi-claulator-height">
+                <input type="range" class="height_slider" 
+                name="realheight" id="myHeight" min="100" 
+                max="220" value="160" >
+            <p>HEIGHT : 
+                <input type="number" name="large" 
+                id="inputHeight" min="100" max="220" 
+                value="160" oninput="ShowValHeight(this.value)">
+                <span id="height"></span>cm
+            </p>
+            </div>
+            <input type="button" id="btn" value="Calculate" 
+            onclick="calculateBMI()">
+            <p><strong>your BMI : </strong>
+            <p>
+                <span id="yourbmi"></span>
+            </p>
+<p>
+     <!--bmi will append here-->
+     <span id="evaluationMessage"></span>
+</p>
+        </div>
+    </form>
+</body>
+</html>
+<script src="index.js"></script>

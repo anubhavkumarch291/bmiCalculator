@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+form{
+    height: 400px;
+    width: 30%;
+    margin: auto;
+    background: linear-gradient(blue,purple);
+    border-radius: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+#btn{
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-color: red;
+    border-style: none;
+    font-size: 16px;
+}
